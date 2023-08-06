@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Oswald:wght@300;400;500&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="image">
+                <img src="images/me 1.jpeg" alt="">
+            </div>
+            <ul id="lists">
+                <li class="active"><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <!-- Start Home -->
+    <div class="loader">
+        <div class="lds-ripple"><div></div><div></div></div>
+        <h3>Loading...</h3>
+    </div>
+    <div class="home" id="home">
+        <div class="container">
+            <div class="left">
+                <div class="swap">
+                    <h2>Hi There, I am a</h2>
+                </div>
+                <div class="swap-1">
+                    <h2><a href="#">Front-end</a></h2>
+                    <h2><a href="#about">About</a></h2>
+                </div>
+                <div class="swap-2">
+                    <h2><a href="#">Web</a></h2>
+                    <h2><a href="#portfolio">Portfolio</a></h2>
+                </div>
+                <div class="swap-3">
+                    <h2><a href="#">Developer</a></h2>
+                    <h2><a href="#contact">Contact Us</a></h2>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/tec.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Start About -->
+    <div class="about" id="about">
+        <div class="container">
+            <h2 class="link">About</h2>
+            <p>I am a front-end web developer. I have skills in the field related to the responsive web and dashboards. I could offer some services</p>
+            <div class="boxes">
+                <div class="image">
+                    <img src="images/Team.jpg" alt="">
+                </div>
+                <div class="icons">
+                    <div class="box">
+                        <i class="fab fa-html5"></i>
+                            <p>HTML is a language which describes the structure of a Web page.</p>
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-css3"></i>
+                            <p>CSS is a language which makes the website look more appealing than just plain.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/pngegg.png" alt="">
+                            <p>JavaScript is a programming language which used in both client-side and server-side. It makes the Web pages interactive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Portfolio -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="link">Portfolio</h2>
+            <div class="ports">
+                <ul>
+                    <li data-cont=".all" class="ac">All</li>
+                    <li data-cont=".products">Products</li>
+                    <li data-cont=".services">Services</li>
+                </ul>
+            </div>
+            <div class="projects">
+                <a class="all products" href="template_1/index.html" target="_blank">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/template1.png" alt="">
+                        </div>
+                        <h3>Template One</h3>
+                    </div>
+                </a>
+                <a class="all products" href="template 2/index.html" target="_blank">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/template2.png" alt="">
+                        </div>
+                        <h3>Template Two</h3>
+                    </div>
+                </a>
+                <a class="all services" href="template 3/Template_Three/index.html" target="_blank">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/template3.png" alt="">
+                        </div>
+                        <h3>Template Three</h3>
+                    </div>
+                </a>
+                <a class="all services" href="Home care/index.html" target="_blank">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/homecare.png" alt="">
+                        </div>
+                        <h3>Home Care</h3>
+                    </div>
+                </a>
+                <a class="all services" href="My_Dash/index.html" target="_blank">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/dashboard.png" alt="">
+                        </div>
+                        <h3>DashBoard</h3>
+                    </div>
+                </a>
+                <a class="all products" href="cruds/index.html" target="_blank">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/cruds.png" alt="">
+                        </div>
+                        <h3>CRUDS Operations</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Start Contac -->
+    <div class="contact" id="contact">
+        <div class="container">
+            <h2 class="link">Contact</h2>
+            <p>It is a fantastic chance to communicate with you. You can communicate with me on Whatsapp <i class="fab fa-whatsapp-square"></i> or on E-mail <i class="far fa-envelope"></i> . If you need to contact, let's find common ground <i class="far fa-smile-beam"></i></p>.
+            <div class="slider">
+                <i class="fas fa-caret-left" id="left"></i>
+                <i class="fas fa-caret-right" id="right"></i>
+                <div class="image">
+                    <img src="images/contact.jpg" alt="">
+                </div>
+                <div class="image disabled">
+                    <img src="images/contact1.jpg" alt="">
+                </div>
+                <div class="image disabled">
+                    <img src="images/contact2.jpg" alt="">
+                </div>
+                <div class="bullets">
+                    <span class="act"></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="icons">
+                <div class="box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <p>+201016409206</p>
+                </div>
+                <div class="box">
+                    <i class="far fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>mohamedzaad122@gmail.com</p>
+                </div>
+            </div>
+            <div class="circle-progress">
+                <span><i class="fas fa-long-arrow-alt-up"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <p>Copyrights @ <span>mohamed shall</span></p>
+            <ul>
+                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" id="face"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin" id="linked"></i></a></li>
+                <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp" id="whats"></i></a></li>
+                <li><a href="https://www.youtube.com"  target="_blank"><i class="fab fa-youtube" id="yout"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
