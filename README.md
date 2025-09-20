@@ -39,6 +39,15 @@ The portfolio highlights different kinds of applications that demonstrate my ski
 
 ---
 
+### 🕌 Prayer Timings App
+- Built with **JavaScript**.
+- Uses the **Aladhan.com API** to fetch accurate daily prayer timings.
+- Displays Fajr, Dhuhr, Asr, Maghrib, and Isha times.
+- Simple, clean, and responsive UI.
+- Live Demo: https://theprayerstimings.netlify.app/
+
+---
+
 ## 🛠 Tech Stack
 
 - **Languages:** HTML, CSS, JavaScript
