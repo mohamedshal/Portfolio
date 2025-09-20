@@ -8,19 +8,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Oswald:wght@300;400;500&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
-    <!-- css file -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/animation.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="css/all.min.css">
+    <!-- css files  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="image">
+            <a href="#home">
+                <div class="image">
                 <img src="images/me 1.jpeg" alt="">
             </div>
+            </a>
             <ul id="lists">
                 <li class="active"><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -34,6 +40,17 @@
             </div>
         </div>
     </header>
+    <div class="overlay disabled">
+                    <div class="box">
+                        <div class="image" width="500">
+                            <img src="images/BootStrapp.png" width="100%" alt="">
+                        </div>
+                        <i id="left" class="fas fa-caret-left"></i>
+                        <i id="right" class="fas fa-caret-right"></i>
+                        <p>x</p>
+                        <a class="all services" href="https://mohamedshal.github.io/Boostrap_Travel/" target="_blank"><h3>View Template</h3></a>
+                    </div>
+    </div>
     <!-- Start Home -->
     <div class="loader">
         <div class="lds-ripple"><div></div><div></div></div>
@@ -41,50 +58,88 @@
     </div>
     <div class="home" id="home">
         <div class="container">
-            <div class="left">
+            <div class="right intersect">
+                <div class="image">
+                    <img src="./images/WhatsApp Image 2023-07-06 at 11.14.46 AM.jpeg" alt="">
+                </div>
+                <div class="right-content">
+                    <h1>Hi, It's <span>Mohamed</span></h1>
+                    <div class="typing-text"><p>I'm a </p><span></span></div>
+                    <p class="introduction">I’m a passionate Front-End Developer with strong expertise in HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, Sass, and React. I enjoy transforming creative ideas into responsive, user-friendly, and visually engaging web experiences. With a keen eye for detail and performance, I strive to write clean, maintainable code and build interfaces that are both functional and delightful for users.</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mohamed-shalaby-306a40223" target="_blank"><i class="fab fa-linkedin" ></i></a>
+                        <a href="https://github.com/mohamedshal" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp" ></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="left intersect">
                 <div class="swap">
-                    <h2>Hi There, I am a</h2>
+                    <h2></h2>
                 </div>
                 <div class="swap-1">
-                    <h2><a href="#">Front-end</a></h2>
-                    <h2><a href="#about">About</a></h2>
+                    <div class="swap-1-inner">
+                        <h2 class="front"><a href="#">React</a></h2>
+                        <h2 class="back"><a href="#about">About</a></h2>
+                    </div>
                 </div>
                 <div class="swap-2">
-                    <h2><a href="#">Web</a></h2>
-                    <h2><a href="#portfolio">Portfolio</a></h2>
+                    <div class="swap-2-inner">
+                        <h2 class="front"><a href="#">JavaScript</a></h2>
+                        <h2 class="back"><a href="#portfolio">Portfolio</a></h2>
+                    </div>
                 </div>
                 <div class="swap-3">
-                    <h2><a href="#">Developer</a></h2>
-                    <h2><a href="#contact">Contact Us</a></h2>
+                    <div class="swap-3-inner">
+                        <h2 class="front"><a href="#">Developer</a></h2>
+                        <h2 class="back"><a href="#contact">Contact Us</a></h2>
+                    </div>
+                    
                 </div>
-            </div>
-            <div class="right">
-                <img src="images/tec.png" alt="">
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- Start About -->
     <div class="about" id="about">
-        <div class="container">
-            <h2 class="link">About</h2>
-            <p>I am a front-end web developer. I have skills in the field related to the responsive web and dashboards. I could offer some services</p>
-            <div class="boxes">
-                <div class="image">
-                    <img src="images/Team.jpg" alt="">
-                </div>
+        <div class="container ">
+            <h2 class="link intersect">About</h2>
+            <p class="intersect">These are my skills</p>
+            <div class="boxes intersect">
                 <div class="icons">
-                    <div class="box">
-                        <i class="fab fa-html5"></i>
-                            <p>HTML is a language which describes the structure of a Web page.</p>
+                    <div class="progress" style="--i:85;--clr:#E44D26;">
+                        <h3>0<span>%</span></h3>
+                        <h4>Html</h4>
                     </div>
-                    <div class="box">
-                        <i class="fab fa-css3"></i>
-                            <p>CSS is a language which makes the website look more appealing than just plain.</p>
+                    <div class="progress" style="--i:90;--clr:#264DE4;">
+                        <h3>0<span>%</span></h3>
+                        <h4>Css</h4>
                     </div>
-                    <div class="box">
-                        <img src="images/pngegg.png" alt="">
-                            <p>JavaScript is a programming language which used in both client-side and server-side. It makes the Web pages interactive.</p>
+                    <div class="progress" style="--i:85;--clr:#F7DF1E;">
+                        <h3>0<span>%</span></h3>
+                        <h4>JavaScript</h4>
                     </div>
+                    <div class="progress" style="--i:90;--clr:#7952B3;">
+                        <h3>0<span>%</span></h3>
+                        <h4>BootStrap</h4>
+                    </div>
+                    <div class="progress" style="--i:85;--clr:#06B6D4;">
+                        <h3>0<span>%</span></h3>
+                        <h4>Tailwind Css</h4>
+                    </div>
+                    <div class="progress" style="--i:90;--clr:#CC6699;">
+                        <h3>0<span>%</span></h3>
+                        <h4>Sass</h4>
+                    </div>
+                    <div class="progress" style="--i:85;--clr:#61DAFB;">
+                        <h3>0<span>%</span></h3>
+                        <h4>React</h4>
+                    </div>
+                    <div class="progress less" style="--i:35;--clr:#3178C6;">
+                        <h3>0<span>%</span></h3>
+                        <h4>TypeScript</h4>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -92,90 +147,79 @@
     <!-- Start Portfolio -->
     <div class="portfolio" id="portfolio">
         <div class="container">
-            <h2 class="link">Portfolio</h2>
-            <div class="ports">
-                <ul>
-                    <li data-cont=".all" class="ac">All</li>
-                    <li data-cont=".products">Products</li>
-                    <li data-cont=".services">Services</li>
-                </ul>
-            </div>
-            <div class="projects">
-                <a class="all products" href="template_1/index.html" target="_blank">
+            <h2 class="link intersect">Portfolio</h2>
+            <div class="projects intersect">
+                <div class="all products">
                     <div class="box">
                         <div class="image">
-                            <img src="images/template1.png" alt="">
-                        </div>
-                        <h3>Template One</h3>
-                    </div>
-                </a>
-                <a class="all products" href="template 2/index.html" target="_blank">
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/template2.png" alt="">
-                        </div>
-                        <h3>Template Two</h3>
-                    </div>
-                </a>
-                <a class="all services" href="template 3/Template_Three/index.html" target="_blank">
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/template3.png" alt="">
-                        </div>
-                        <h3>Template Three</h3>
-                    </div>
-                </a>
-                <a class="all services" href="Home care/index.html" target="_blank">
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/homecare.png" alt="">
-                        </div>
-                        <h3>Home Care</h3>
-                    </div>
-                </a>
-                <a class="all services" href="My_Dash/index.html" target="_blank">
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/dashboard.png" alt="">
-                        </div>
-                        <h3>DashBoard</h3>
-                    </div>
-                </a>
-                <a class="all products" href="cruds/index.html" target="_blank">
-                    <div class="box">
-                        <div class="image">
-                            <img src="images/cruds.png" alt="">
+                            <img src="./images/crudsPhoto.png" alt="">
                         </div>
                         <h3>CRUDS Operations</h3>
                     </div>
-                </a>
+                    <a class=" disabled products" href="https://mohamedshal.github.io/CRUDS/" target="_blank"></a>
+                </div>
+                <div class="all products">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/ecommerce3332.png" alt="">
+                        </div>
+                        <h3>E-commerce</h3>
+                    </div>
+                    <a class=" disabled products" href="https://e-commerce3x1.netlify.app/#/login" target="_blank"></a>
+                </div>
+                <div class="all services">
+                    <div class="box">
+                        <div class="image">
+                            <img src="./images/crypto.png" alt="">
+                        </div>
+                        <h3>Crypto Exchange</h3>
+                    </div>
+                    <a class=" disabled services" href="https://crypto-currencies321.netlify.app/" target="_blank"></a>
+                </div>
+                <div class="all services">
+                    <div class="box">
+                        <div class="image">
+                            <img src="./images/weather.png" alt="">
+                        </div>
+                        <h3>Weather App</h3>
+                    </div>
+                    <a class=" disabled services" href="https://weathertemp123.netlify.app/" target="_blank"></a>
+                </div>
+                <div class="all services">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/prayertimings.png" alt="">
+                        </div>
+                        <h3>Prayers-Timings</h3>
+                    </div>
+                    <a class=" disabled services" href="https://theprayerstimings.netlify.app/" target="_blank"></a>
+                </div>
             </div>
         </div>
     </div>
     <!-- Start Contac -->
     <div class="contact" id="contact">
         <div class="container">
-            <h2 class="link">Contact</h2>
-            <p>It is a fantastic chance to communicate with you. You can communicate with me on Whatsapp <i class="fab fa-whatsapp-square"></i> or on E-mail <i class="far fa-envelope"></i> . If you need to contact, let's find common ground <i class="far fa-smile-beam"></i></p>.
-            <div class="slider">
-                <i class="fas fa-caret-left" id="left"></i>
-                <i class="fas fa-caret-right" id="right"></i>
-                <div class="image">
-                    <img src="images/contact.jpg" alt="">
-                </div>
-                <div class="image disabled">
-                    <img src="images/contact1.jpg" alt="">
-                </div>
-                <div class="image disabled">
-                    <img src="images/contact2.jpg" alt="">
-                </div>
-                <div class="bullets">
-                    <span class="act"></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <h2 class="link intersect">Contact</h2>
+            <p class="intersect">It is a fantastic chance to communicate with you. You can communicate with me on Whatsapp <i class="fab fa-whatsapp-square"></i> or on E-mail <i class="far fa-envelope"></i> . If you need to contact, let's find common ground <i class="far fa-smile-beam"></i></p>.
+            <div class="contact-form intersect">
+                <h3>Send me a message</h3>
+                <form id="contactForm" action="https://formspree.io/f/xqadblvp" method="POST">
+                    <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                    <input type="email" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="link">Send</button>
+                </form>
+                <p id="formStatus" style="margin-top: 15px;"></p>
             </div>
-            <div class="icons">
+
+            <div class="icons intersect">
                 <div class="box">
                     <i class="fas fa-phone-alt"></i>
                     <h3>Phone</h3>
@@ -184,7 +228,7 @@
                 <div class="box">
                     <i class="far fa-envelope"></i>
                     <h3>Email</h3>
-                    <p>mohamedzaad122@gmail.com</p>
+                    <p>mohamedshelby682@gmail.com</p>
                 </div>
             </div>
             <div class="circle-progress">
@@ -198,9 +242,9 @@
             <p>Copyrights @ <span>mohamed shall</span></p>
             <ul>
                 <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook" id="face"></i></a></li>
-                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin" id="linked"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mohamed-shalaby-306a40223" target="_blank"><i class="fab fa-linkedin" id="linked"></i></a></li>
+                <li><a href="https://github.com/mohamedshal" target="_blank"><i class="fab fa-github" id="git"></i></a></li>
                 <li><a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp" id="whats"></i></a></li>
-                <li><a href="https://www.youtube.com"  target="_blank"><i class="fab fa-youtube" id="yout"></i></a></li>
             </ul>
         </div>
     </footer>

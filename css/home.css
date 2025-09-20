@@ -1,0 +1,284 @@
+/* Start Home */
+.home {
+    background-image: url('../images/dark.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+}
+@media(max-width:767px) {
+    .home {
+        height: 70vh;
+        background-image: url('../images/dark1.jpg');
+    }
+    .home .container {
+        height: 100vh;
+    }
+}
+.intersect {
+    transition: 1.5s;
+    overflow: hidden;
+    transform: translateX(100%);
+    filter: blur(5px);
+}
+.intersect.showed {
+    filter: blur(0px) !important;
+    transform: translateX(0);
+}
+.container {
+    overflow: hidden;
+}
+.home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.home .container h2 {
+    font-size: 50px;
+}
+.home .container  h2 a {
+    color: #fff;
+    transition: var(--del-transition);
+}
+/* right side  */
+.home .container .right {
+    margin-left: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.home .container .right .image  {
+    width: 450px;
+    height: 450px;
+}
+.home .container .right .image img {
+    width: 100%;
+    border-radius: 50%;
+}
+.home .container .right .right-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.home .container .right .right-content .introduction {
+    color: var(--light-grey);
+    margin: 15px 0;
+}
+.home .container .right h1 {
+    margin: 0 0 0 1.5rem;
+    padding: 0;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--light-grey);
+}
+.home .container .right span {
+    color: var(--neon-yellow);
+}
+.home .container .right .typing-text {
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--neon-yellow);
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 2rem 0.5rem 2rem 1.5rem;
+    transition: 0.3s ease;
+    color: var(--neon-yellow);
+}
+.social-icons a i {
+    font-size: 1.5rem;
+}
+.social-icons a:hover {
+    color: #000;
+    transform: scale(1.3) translateY(-5px);
+    background-color: var(--neon-yellow);
+    box-shadow: 0 0 15px var(--neon-yellow);
+}
+.typing-text {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    height: 30px;
+    color: var(--light-grey);
+    margin-left: 1.5rem;
+}
+.typing-text span {
+    height: 100%;
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.typing-text span::before {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 9px;
+    position: absolute;
+    content: "Frontend Developer";
+    color: var(--neon-yellow);
+    z-index: 200;
+    animation: words 3s 2s infinite;
+    font-size: 34px;
+}
+.typing-text span::after {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid #000;
+    right: -15px;
+    animation: cursor 0.6s infinite;
+}
+@keyframes cursor {
+    to {
+        border-left: 3px solid var(--light-grey);
+    }
+}
+@keyframes words {
+    0% , 100% {
+        content: "F";
+    }
+    5% {
+        content: "Fr";
+    }
+    10% {
+        content: "Fro";
+    }
+    15% {
+        content: "Fron";
+    }
+    20%{
+        content: "Front";
+    }
+    25% {
+        content: "Fronte";
+    }
+    30%{
+        content: "Fronten";
+    }
+    35%{
+        content: "Frontend";
+    }
+    40%{
+        content: "Frontend ";
+    }
+    45%{
+        content: "Frontend D";
+    }
+    50%{
+        content: "Frontend De";
+    }
+    55%{
+        content: "Frontend Dev";
+    }
+    60%{
+        content: "Frontend Deve";
+    }
+    65%{
+        content: "Frontend Devel";
+    }
+    70%{
+        content: "Frontend Develo";
+    }
+    75%{
+        content: "Frontend Develop";
+    }
+    80%{
+        content: "Frontend Develope";
+    }
+    90%{
+        content: "Frontend Developer";
+    }
+}
+@media (max-width:1200px) and (min-width: 991px) {
+    .home .container h2 {
+        font-size: 45px;
+    }
+    .right-content {
+        width: 60%;
+    }
+}
+@media (max-width:1200px) and (min-width:768px) {
+    .home .container .right .image  {
+    width: 250px !important;
+    height: 250px !important;
+    }
+    .home .container .right h1 {
+        font-size: 2rem !important;
+    }
+    .home .container .right h3 {
+        font-size: 2rem !important;
+    }
+}
+@media(max-width:992px){
+    .home .container h2 {
+        font-size: 35px;
+    }
+    .home .container .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    gap: 10px;
+}
+.right-content {
+    align-items: center;
+}
+.typing-text {
+    transform: translateX(20%);
+}
+}
+@media (max-width:768px) {
+.home .container .right .image  {
+    width: 200px !important;
+    height: 200px !important;
+    }
+.home .container .right h1 {
+        font-size: 1.5rem !important;
+    }
+    .home .container .right h3 {
+        font-size: 1.5rem !important;
+    }
+    .right-content {
+        width: 100% !important;
+    }
+    .typing-text span::before {
+        font-size: 1.4rem;
+    }
+    .social-icons a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+    }
+    .social-icons a i {
+        font-size: 1rem;
+    }
+    .introduction {
+        display: none;
+    }
+}
+
+/* End Home */
